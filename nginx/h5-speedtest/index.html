@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
-<title>HTML5 Speedtest</title>
+<title>OVHVPN VIP SPEEDTEST</title>
 <style type="text/css">
 	html,body{
 		border:none; padding:0; margin:0;
@@ -40,10 +40,10 @@
 		color:#FFFFFF;
 	}
 	#startStopBtn:before{
-		content:"开始测试";
+		content:"start testing";
 	}
 	#startStopBtn.running:before{
-		content:"强制停止";
+		content:"forced stop";
 	}
 	#test{
 		margin-top:2em;
@@ -205,7 +205,7 @@ function startStop(){
 function updateUI(forced){
 	if(!forced&&(!data||!w)) return;
 	var status=data.testState;
-	I("ip").textContent="测速中...";
+	I("ip").textContent="Speed test...";
 	I("dlText").textContent=(status==1&&data.dlStatus==0)?"...":data.dlStatus;
 	drawMeter(I("dlMeter"),mbpsToAmount(Number(data.dlStatus*(status==1?oscillate():1))),meterBk,dlColor,Number(data.dlProgress),progColor);
 	I("ulText").textContent=(status==3&&data.ulStatus==0)?"...":data.ulStatus;
@@ -245,18 +245,18 @@ function initUI(){
 </script>
 </head>
 <body>
-<h1>HTML5 Speedtest</h1>
+<h1>OVH VPN SPEEDTEST</h1>
 <div id="startStopBtn" onclick="startStop()"></div>
 <div id="test">
 	<div class="testGroup">
 		<div class="testArea">
-			<div class="testName">下载速度</div>
+			<div class="testName">download speed</div>
 			<canvas id="dlMeter" class="meter"></canvas>
 			<div id="dlText" class="meterText"></div>
 			<div class="unit">Mbps</div>
 		</div>
 		<div class="testArea">
-			<div class="testName">上传速度</div>
+			<div class="testName">upload speed</div>
 			<canvas id="ulMeter" class="meter"></canvas>
 			<div id="ulText" class="meterText"></div>
 			<div class="unit">Mbps</div>
@@ -264,13 +264,13 @@ function initUI(){
 	</div>
 	<div class="testGroup">
 		<div class="testArea">
-			<div class="testName">网络延迟</div>
+			<div class="testName">network latency</div>
 			<canvas id="pingMeter" class="meter"></canvas>
 			<div id="pingText" class="meterText"></div>
 			<div class="unit">ms</div>
 		</div>
 		<div class="testArea">
-			<div class="testName">网络抖动</div>
+			<div class="testName">network jitter</div>
 			<canvas id="jitMeter" class="meter"></canvas>
 			<div id="jitText" class="meterText"></div>
 			<div class="unit">ms</div>
@@ -292,13 +292,13 @@ var _hmt = _hmt || [];
 </script>
 <script type="text/javascript" charset="UTF-8" src="https://api.isoyu.com/js/v1.js" exte-id="548" data-size="36x140" data-color="#FF7119" data-show="1"></script>
 
-            <a href="https://isoyu.com/sitemap/" target="_blank">SiteMap</a>
-            <a href="https://isoyu.com/spider.html" target="_blank">INSObot</a>
-            <a href="https://api.isoyu.com/" target="_blank">Docker Api</a>
-			<a href="https://isoyu.com/about/Index1.html" target="_blank">Privacy<!-- (en - en_gb - object) --></a>
-			<a href="https://isoyu.com/about/Index20.html" target="_blank">About</a>
-			<a href="https://t.me/INS_O" target="_blank">F.A.Q.</a>
-		    <a href="javascript:;">© 2007-2019 isoyu.com. All Rights Reserved.</a>
+            <a href="#" target="_blank">SiteMap</a>
+            <a href="https://www.ovhcloud.ml" target="_blank">OVH CLOUD</a>
+            
+			<a href="mailto:stacx@yahoo.com" target="_blank">Contact<!-- (en - en_gb - object) --></a>
+			<a href="https://www.raveesh.games" target="_blank">Raveesh Nilaweera</a>
+			
+		    <a href="javascript:;">© 2021-2022 ovhcloud. All Rights Reserved.</a>
 </div>
 <script type="text/javascript">setTimeout(initUI,100);</script>
 </body>
